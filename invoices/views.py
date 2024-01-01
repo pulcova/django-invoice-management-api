@@ -17,7 +17,7 @@ class InvoiceListCreateAPIView(ListCreateAPIView):
 
     def get(self, request, *args, **kwargs):
         # Implement the GET method to retrieve a list of invoices
-        invoices = self.queryset
+        invoices = self.get_queryset()
         serializer = self.serializer_class(invoices, many=True)
         return Response(serializer.data)
 
