@@ -104,4 +104,5 @@ GitHub.sublime-settings
 # Editor swapfiles
 .*.sw?
 *~
-
+db.sqlite3/
+db.sqlite3
